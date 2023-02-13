@@ -20,16 +20,20 @@ export default function Navbar() {
       <ul className={`${isOpen ? styles.ul_open : styles.ul}`}>
         <li className={styles.li}>
           <FiX className={styles.closeIcon} onClick={handelOnChange} />
-          <Link className={styles.link} href="/">
+          <Link className={styles.link} href="/" onClick={handelOnChange}>
             Home
           </Link>
-          <Link className={styles.link} href="/blog">
+          <Link className={styles.link} href="/blog" onClick={handelOnChange}>
             Blog
           </Link>
-          <Link className={styles.link} href="/about">
+          <Link className={styles.link} href="/about" onClick={handelOnChange}>
             About
           </Link>
-          <Link className={styles.link} href="/contact">
+          <Link
+            className={styles.link}
+            href="/contact"
+            onClick={handelOnChange}
+          >
             Contact
           </Link>
           {/* <IoSearch className={styles.searchIcon} /> */}
