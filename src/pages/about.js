@@ -12,8 +12,8 @@ export default function about() {
         <div className={styles.container}>
           <div className={style.about_content}>
             <div className={style.about_description}>
-              <h1 style={{ fontSize: "5rem" }}>About Me</h1>
-              <p style={{ margin: "7rem 0 0 0" }}>
+              <h1 className={style.about_title}>About Me</h1>
+              <p className={style.about_p}>
                 Use this section to describe yourself and the topic of your
                 blog. You could share your story, why you started the blog, and
                 the value your visitor will gain from it. The goal is to get the
@@ -21,7 +21,13 @@ export default function about() {
               </p>
             </div>
             <div className={style.about_image}>
-              <Image src="/recent.jpg" width={400} height={400} alt="" />
+              <Image
+                className={style.about_image}
+                src="/recent.jpg"
+                width={400}
+                height={400}
+                alt=""
+              />
             </div>
           </div>
           {/* ----------------------------- POPULAR POSTS -----------------------------*/}
