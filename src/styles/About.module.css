@@ -1,0 +1,9 @@
+.about_content {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+}
+
+.about_description {
+    padding: 0 23rem 0 0rem;
+}
